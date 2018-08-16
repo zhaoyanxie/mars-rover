@@ -15,7 +15,6 @@ Each rover will be finished sequentially, which means that the second rover won'
 
 ### Output:
 The output for each rover should be its final co-ordinates and heading.
-Input and Output
 
 ### Test Input:
 - plataeu size: 5 5
@@ -33,7 +32,6 @@ Part 2 Extending the Problem
 Since the plateau is rectangular and driving over the edge results in the rover plummeting to fiery destruction, a rover that moves off an edge of the plateau is lost forever. However, lost rovers leave a beacon in the dirt that prohibits future rovers from dropping off the edge at the same grid point.
 The beacon is left at the last set of co-ordinates that the rover occupied before disappearing over the edge. An instruction to commit robotic suicide and move off the plateau from a grid point from which a rover has been previously lost is simply ignored by the current rover.
 If a rover falls off the edge of the grid the acronym "RIP" should be printed after its last position and orientation.
-Input and Output
 
 ### Test Input:
 5 5
