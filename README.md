@@ -18,14 +18,14 @@ The output for each rover should be its final co-ordinates and heading.
 Input and Output
 
 ### Test Input:
-5 5
-1 2 N
-LMLMLMLMM
-3 3 E
-MMRMMRMRRM
+- plataeu size: 5 5
+- rover #1 initial position: 1 2 N
+- input for rover #1: LMLMLMLMM
+- rover #2 initial position: 3 3 E
+- input for rover #2: MMRMMRMRRM
 ### Expected Output:
-1 3 N
-5 1 E
+- for rover #1: 1 3 N
+- for rover #2: 5 1 E
 
 
 Part 2 Extending the Problem
