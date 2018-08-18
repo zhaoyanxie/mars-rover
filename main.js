@@ -15,6 +15,13 @@ const main = async () => {
     "Specify the instructions for the mars rover (e.g. LMLMLMLMM):"
   );
   console.log("z is", z);
+
+  // TODO: include the functions that you've implemented for this kata
+
+  console.log(
+    "The final coordinates of the mars rover is: <replace with the output of your program>"
+  );
+
   rl.close();
 };
 

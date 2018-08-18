@@ -26,6 +26,7 @@ The output for each rover should be its final co-ordinates and heading.
 - for rover #1: 1 3 N
 - for rover #2: 5 1 E
 
+**Note**: To ensure that this lab focuses on OOP and TDD, we have written the code to take care of getting the users' input interactively via the commandline. To run this program, run `node main.js`. After completing the kata using the TDD approach, you can update `main.js` to call your functions instead.
 
 Part 2 Extending the Problem
 ---------------------------------------------------
