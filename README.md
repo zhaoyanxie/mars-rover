@@ -1,4 +1,4 @@
-Code Review: Mars Rover
+Code Kata: Mars Rover
 =======================
 Part 1
 ------
