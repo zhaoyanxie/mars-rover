@@ -44,7 +44,7 @@ class Rover {
         this.currentHeading = "N";
       }
     } else if (direction === "R") {
-      if ((this.currentHeading = "N")) {
+      if (this.currentHeading === "N") {
         this.currentHeading = "E";
       } else if (this.currentHeading === "E") {
         this.currentHeading = "S";
