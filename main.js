@@ -1,4 +1,5 @@
 const { getUserInput, rl } = require("./readline-helper");
+const { createRover, moveRover } = require("./utils/helperFunctions");
 
 const main = async () => {
   const x = await getUserInput(
@@ -16,10 +17,13 @@ const main = async () => {
   );
   console.log("z is", z);
 
-  // TODO: include the functions that you've implemented for this kata
+  const rover = createRover(x, y);
+  moveRover(rover, z);
 
   console.log(
-    "The final coordinates of the mars rover is: <replace with the output of your program>"
+    `The final coordinates of the mars rover is: ${rover.currentLocation[0]} ${
+      rover.currentLocation[1]
+    } ${rover.currentHeading}`
   );
 
   rl.close();
