@@ -1,5 +1,5 @@
 class Rover {
-  constructor(currentLocation, currentHeading, plateauSize) {
+  constructor(currentLocation, currentHeading) {
     this.currentLocation = currentLocation; // array of size 2 [x, y]
     this.currentHeading = currentHeading; // // string of "N" / "S" / "E" / "W"
   }

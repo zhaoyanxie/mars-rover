@@ -1,10 +1,10 @@
-const Rover = require("../classes/Rover");
+const Rover = require("../model/Rover");
 
-const createRover = (x, y) => {
-  const plateauSize = [Number(x.split(" ")[0]), Number(x.split(" ")[0])];
+const createRover = y => {
+  // const plateauSize = [Number(x.split(" ")[0]), Number(x.split(" ")[0])];
   const currentHeading = y.split(" ")[2];
   const currentLocation = [Number(y.split(" ")[0]), Number(y.split(" ")[1])];
-  const rover = new Rover(currentLocation, currentHeading, plateauSize);
+  const rover = new Rover(currentLocation, currentHeading);
   return rover;
 };
 

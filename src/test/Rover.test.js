@@ -1,4 +1,4 @@
-const Rover = require("../classes/Rover");
+const Rover = require("../model/Rover");
 
 test("should return the current location and heading of the rover instance", () => {
   const currentLocation = [0, 0];
