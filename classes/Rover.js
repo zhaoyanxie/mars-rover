@@ -2,13 +2,12 @@ class Rover {
   constructor(currentLocation, currentHeading, plateauSize) {
     this.currentLocation = currentLocation; // array of size 2 [x, y]
     this.currentHeading = currentHeading; // // string of "N" / "S" / "E" / "W"
-    this.plateauSize = plateauSize;
   }
 
-  checkPlateauLimits() {
+  checkPlateauLimits(plateauSize) {
     if (
-      this.currentLocation[0] > this.plateauSize[0] ||
-      this.currentLocation[1] > this.plateauSize[1]
+      this.currentLocation[0] > plateauSize[0] ||
+      this.currentLocation[1] > plateauSize[1]
     ) {
       this.currentLocation = undefined;
     }
