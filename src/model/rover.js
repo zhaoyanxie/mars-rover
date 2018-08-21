@@ -1,5 +1,5 @@
 const { LEFT, RIGHT } = require("./command");
-const { NORTH, SOUTH, EAST, WEST } = require("./directions");
+const { NORTH, SOUTH, EAST, WEST, turnLeft, turnRight } = require("./heading");
 
 class Rover {
   constructor(currentLocation, currentHeading) {
@@ -30,25 +30,9 @@ class Rover {
 
   changeHeading(direction) {
     if (direction === LEFT) {
-      if (this.currentHeading === NORTH) {
-        this.currentHeading = WEST;
-      } else if (this.currentHeading === WEST) {
-        this.currentHeading = SOUTH;
-      } else if (this.currentHeading === SOUTH) {
-        this.currentHeading = EAST;
-      } else if (this.currentHeading === EAST) {
-        this.currentHeading = NORTH;
-      }
+      this.currentHeading = turnLeft(this.currentHeading);
     } else if (direction === RIGHT) {
-      if (this.currentHeading === NORTH) {
-        this.currentHeading = EAST;
-      } else if (this.currentHeading === EAST) {
-        this.currentHeading = SOUTH;
-      } else if (this.currentHeading === SOUTH) {
-        this.currentHeading = WEST;
-      } else if (this.currentHeading === WEST) {
-        this.currentHeading = NORTH;
-      }
+      this.currentHeading = turnRight(this.currentHeading);
     } else {
       console.log("invalid heading instructions");
     }
