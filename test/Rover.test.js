@@ -14,7 +14,7 @@ test("should indicate the rover is out of plateau's limits", () => {
   const currentHeading = "N";
   const plateauSize = [4, 4];
   const rover = new Rover(currentLocation, currentHeading, plateauSize);
-  expect(rover.currentHeading).toBe(undefined);
+  rover.checkPlateauLimits();
   expect(rover.currentLocation).toBe(undefined);
 });
 
