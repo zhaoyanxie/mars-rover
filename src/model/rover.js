@@ -1,3 +1,5 @@
+const { LEFT, RIGHT } = require("../model/command");
+
 class Rover {
   constructor(currentLocation, currentHeading) {
     this.currentLocation = currentLocation; // array of size 2 [x, y]
@@ -26,7 +28,7 @@ class Rover {
   }
 
   changeHeading(direction) {
-    if (direction === "L") {
+    if (direction === LEFT) {
       if (this.currentHeading === "N") {
         this.currentHeading = "W";
       } else if (this.currentHeading === "W") {
@@ -36,7 +38,7 @@ class Rover {
       } else if (this.currentHeading === "E") {
         this.currentHeading = "N";
       }
-    } else if (direction === "R") {
+    } else if (direction === RIGHT) {
       if (this.currentHeading === "N") {
         this.currentHeading = "E";
       } else if (this.currentHeading === "E") {
