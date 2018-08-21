@@ -19,14 +19,20 @@ const main = async () => {
 
   const rover = createRover(x, y);
   moveRover(rover, z);
+  rover.checkPlateauLimits();
 
-  console.log(
-    `The final coordinates of the mars rover is: ${rover.currentLocation[0]} ${
-      rover.currentLocation[1]
-    } ${rover.currentHeading}`
-  );
-
+  if (rover.currentLocation === undefined) {
+    console.log("RIP");
+  } else {
+    console.log(
+      `The final coordinates of the mars rover is: ${
+        rover.currentLocation[0]
+      } ${rover.currentLocation[1]} ${rover.currentHeading}`
+    );
+  }
   rl.close();
 };
 
 main();
+
+module.exports = main;

@@ -11,8 +11,6 @@ class Rover {
       this.currentLocation[1] > this.plateauSize[1]
     ) {
       this.currentLocation = undefined;
-      console.log("Rover has fallen off plateau!");
-      return true;
     }
   }
 
