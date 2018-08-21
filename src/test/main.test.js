@@ -1,12 +1,12 @@
 const mockGetUserInput = jest.fn();
 // jest.setTimeout(30000);
 
-jest.doMock("../../readline-helper.js", () => {
+jest.doMock("../readline-helper.js", () => {
   return {
     getUserInput: mockGetUserInput
   };
 });
-const main = require("../../main");
+const main = require("../main");
 
 test("should expect getUserInput to be called", async () => {
   // mockGetUserInput

@@ -1,5 +1,5 @@
 const { getUserInput, rl } = require("./readline-helper");
-const { createRover, moveRover } = require("./src/utils/helperFunctions");
+const { createRover, moveRover } = require("./utils/helperFunctions");
 
 const main = async () => {
   const x = await getUserInput(
